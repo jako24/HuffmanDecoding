@@ -1,8 +1,4 @@
-"""
-Plik posiadajacy 500GB dzieki kompresji huffmana ma sie zmiejszyc do ok 300GB (+-)
-i ma sie generowac w tym samym miejscu plik z dopiskiem np kompresja
-
-"""
+#HUFFMAN DECODING
 
 def calculate(text, i):
     left = 2 * i + 1
