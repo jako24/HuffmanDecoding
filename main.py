@@ -52,7 +52,6 @@ def huffman_encoding(data):
             freq_dict[char] = 0
         freq_dict[char] += 1
 
-    # print(freq_dict)
     huff_tree = huffman_tree(freq_dict)
     print(huff_tree)
     huff_codes = {char: code for weight, char_code_pair in enumerate(huff_tree) for char, code in [char_code_pair]}
@@ -82,10 +81,8 @@ def save_compress_file(filename, encoded_data):
 def compress_file(filename):
     with open(filename, 'r') as file1:
         data = file1.read().lower()
-        # print(data)
 
     encoded_data = huffman_encoding(data)
-    # print(encoded_data)
     save_compress_file(filename, encoded_data)
 
     return len(encoded_data) / (8 * len(data))
