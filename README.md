@@ -9,9 +9,11 @@ This code implements the Huffman Encoding algorithm, which is a data compression
 
 The code uses several helper functions, such as calculate, calc_freq, huffman_tree, huffman_encoding, huffman_decoding, save_compress_file, and compress_file, to perform these steps.
 
-# HOW THE CODE WORKS
+# How The Code Works
 
 Steps: 
 1. Create a text file
 2. Input the file's location in "filename = [file path]"
 3. After executing the code, a new file with '.compress' added to its name will be generated in the same directory.
+
+Also in the terminal returns of the compression ratio as the number of bits in the compressed data divided by the number of bits in the original data as well as huffman tree dictionary will be visible for the user.
