@@ -88,7 +88,7 @@ def compress_file(filename):
     return len(encoded_data) / (8 * len(data))
 
 
-filename = "pathname of a file you want to open"
+filename = "file path"
 
 compression_ratio = compress_file(filename)
 print("Compression ratio: {:.2f}%".format(compression_ratio * 100))
